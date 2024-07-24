@@ -1,4 +1,4 @@
-import PostPage, { PostPageProps } from 'components/PostPage'
+import PostPage, { PostPageProps } from 'components/blog/PostPage'
 import {
   type Post,
   postAndMoreStoriesQuery,
