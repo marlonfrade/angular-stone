@@ -9,7 +9,7 @@ export interface SharedPageProps {
   token: string
 }
 
-const PreviewProvider = dynamic(() => import('components/PreviewProvider'))
+const PreviewProvider = dynamic(() => import('components/blog/PreviewProvider'))
 
 export default function App({
   Component,

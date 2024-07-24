@@ -5,7 +5,7 @@ import type { NextRequest, NextResponse } from 'next/server'
 
 export const config = { runtime: 'edge' }
 
-import { height, OpenGraphImage, width } from 'components/OpenGraphImage'
+import { height, OpenGraphImage, width } from 'components/blog/OpenGraphImage'
 import * as demo from 'lib/demo.data'
 import { Settings, settingsQuery } from 'lib/sanity.queries'
 

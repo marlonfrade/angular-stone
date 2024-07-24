@@ -1,14 +1,14 @@
-import BlogMeta from 'components/BlogMeta'
+import Meta from './Meta'
 import * as demo from 'lib/demo.data'
 import { Settings } from 'lib/sanity.queries'
 import Head from 'next/head'
 import { toPlainText } from 'next-sanity'
 
-export interface IndexPageHeadProps {
+export interface PageHeadProps {
   settings: Settings
 }
 
-export default function IndexPageHead({ settings }: IndexPageHeadProps) {
+export default function PageHead({ settings }: PageHeadProps) {
   const {
     title = demo.title,
     description = demo.description,
@@ -19,7 +19,7 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
   return (
     <Head>
       <title>{title}</title>
-      <BlogMeta />
+      <Meta />
       <meta
         key="description"
         name="description"
