@@ -18,9 +18,9 @@ interface Query {
 export default function Page(props: PageProps) {
   const { posts, settings, draftMode } = props
 
-  if (draftMode) {
-    return <PreviewIndexPage posts={posts} settings={settings} />
-  }
+  // if (draftMode) {
+  //   return <PreviewIndexPage posts={posts} settings={settings} />
+  // }
 
   return <LandingPage settings={settings} />
 }

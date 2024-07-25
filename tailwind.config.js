@@ -9,6 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#002657',
+        secondary: '#0047BB',
+        highlight: '#C49748',
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
@@ -38,5 +41,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: ['prettier-plugin-tailwindcss'],
 }
